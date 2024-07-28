@@ -7,29 +7,43 @@ The first code cell imports the required libraries. The second code cell downloa
 
 The structure of the dataset files that are downloaded looks like this (You will notice that the test directory has no subdirectories and the images are not labeled):
 
+cats_and_dogs/
+|__ train/
+|______ cats/
+|______ cat.0.jpg, cat.1.jpg, ...
+|______ dogs/
+|______ dog.0.jpg, dog.1.jpg, ...
+|__ validation/
+|______ cats/
+|______ cat.2000.jpg, cat.2001.jpg, ...
+|______ dogs/
+|______ dog.2000.jpg, dog.2001.jpg, ...
+|__ test/
+|______ 1.jpg, 2.jpg, ...
 
 
 
-- `train/`: Contiene imágenes de entrenamiento.
-  - `cats/`: Contiene imágenes de gatos para entrenamiento.
-  - `dogs/`: Contiene imágenes de perros para entrenamiento.
-- `validation/`: Contiene imágenes de validación.
-  - `cats/`: Contiene imágenes de gatos para validación.
-  - `dogs/`: Contiene imágenes de perros para validación.
-- `test/`: Contiene imágenes para pruebas.
+- `train/`: Contains training images.
+  - `cats/`: Contains cat images for training.
+  - `dogs/`: Contains dog images for training.
+- `validation/`: Contains validation images.
+  - `cats/`: Contains cat images for validation.
+  - `dogs/`: Contains dog images for validation.
+- `test/`: Contains test images.
 
 
-- Imágenes de entrenamiento:
+
+- Training images:
   - `cat.0.jpg`
   - `cat.1.jpg`
   - `dog.0.jpg`
   - `dog.1.jpg`
-- Imágenes de validación:
+- Validation images:
   - `cat.2000.jpg`
   - `cat.2001.jpg`
   - `dog.2000.jpg`
   - `dog.2001.jpg`
-- Imágenes de prueba:
+- Test images:
   - `1.jpg`
   - `2.jpg`
 
