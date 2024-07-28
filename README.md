@@ -7,29 +7,32 @@ The first code cell imports the required libraries. The second code cell downloa
 
 The structure of the dataset files that are downloaded looks like this (You will notice that the test directory has no subdirectories and the images are not labeled):
 
-data/
-├── train/
-│   ├── gatos/
-│   │   └── cat.0.jpg
-│   │   └── cat.1.jpg
-│   │   └── ...
-│   └── perros/
-│       └── dog.0.jpg
-│       └── dog.1.jpg
-│       └── ...
-├── validation/
-│   ├── gatos/
-│   │   └── cat.2000.jpg
-│   │   └── cat.2001.jpg
-│   │   └── ...
-│   └── perros/
-│       └── dog.2000.jpg
-│       └── dog.2001.jpg
-│       └── ...
-└── test/
-└── 1.jpg
-└── 2.jpg
-└── ...
+
+
+
+- `train/`: Contiene imágenes de entrenamiento.
+  - `cats/`: Contiene imágenes de gatos para entrenamiento.
+  - `dogs/`: Contiene imágenes de perros para entrenamiento.
+- `validation/`: Contiene imágenes de validación.
+  - `cats/`: Contiene imágenes de gatos para validación.
+  - `dogs/`: Contiene imágenes de perros para validación.
+- `test/`: Contiene imágenes para pruebas.
+
+
+- Imágenes de entrenamiento:
+  - `cat.0.jpg`
+  - `cat.1.jpg`
+  - `dog.0.jpg`
+  - `dog.1.jpg`
+- Imágenes de validación:
+  - `cat.2000.jpg`
+  - `cat.2001.jpg`
+  - `dog.2000.jpg`
+  - `dog.2001.jpg`
+- Imágenes de prueba:
+  - `1.jpg`
+  - `2.jpg`
+
 You can tweak epochs and batch size if you like, but it is not required.
 
 The following instructions correspond to specific cell numbers, indicated with a comment at the top of the cell (such as # 3).
